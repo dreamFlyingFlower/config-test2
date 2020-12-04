@@ -1,0 +1,9 @@
+#dev
+server:
+  port: 33335
+spring:
+  application:
+    name: config-test2-prod
+  cloud:
+    zookeeper:
+      connect-string: 192.168.1.146:2181

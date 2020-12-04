@@ -1,0 +1,15 @@
+server: 
+  port: 33334
+spring:
+  application:
+    name: config-test2-dev
+  profiles:
+    active: dev
+  cloud:
+    zookeeper:
+      # zk的服务地址,集群时用逗号隔开
+      connect-string: 192.168.1.146:2181
+    config:
+      discovery:
+        enabled: true
+        service-id: cloud-config
